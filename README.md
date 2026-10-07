@@ -1,13 +1,14 @@
 # Trabajo Práctico 1: Pruebas del Software - Uso de un Framework de Testing
 
-**Materia:** Ingeniería de Software 1 (PU) - Ingeniería de Software 2 (LI / II)  
-**Fecha:** Septiembre 2026  
+**Materia:** Ingeniería de Software 1 (PU) - Ingeniería de Software 2 (LI / II)   
 **Problema:** *Sistema de Gestión de Productos en una Tienda*  
 **Tecnologías:** Python 3.14, `pytest`, `pytest-cov`, `unittest.mock`
-
+**Integrantes:**  Girbau Alfaro, Santiago Luis
+                  Flores, César Fernando
+                  López, Gonzalo Sebastián
 ---
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto implementa y evalúa un sistema básico de gestión de productos en una tienda de comercio electrónico, diseñado para demostrar las mejores prácticas en pruebas de software:
 - **Pruebas unitarias aisladas**
@@ -19,34 +20,11 @@ Este proyecto implementa y evalúa un sistema básico de gestión de productos e
 
 ---
 
-## 📁 Estructura del Repositorio
-
-```text
-TP1/
-├── producto.py                  # Entidad Producto con validación y actualización de precio
-├── tienda.py                    # Entidad Tienda con inventario, descuentos y carrito
-├── excepciones.py               # Excepciones personalizadas del dominio de negocio
-├── test_producto.py             # Punto de entrada directo para pruebas de Producto
-├── test_tienda.py               # Punto de entrada directo para pruebas de Tienda
-├── pytest.ini                   # Configuración del framework pytest
-├── requirements.txt             # Dependencias del proyecto (pytest, pytest-cov)
-├── .gitignore                   # Archivos y directorios excluidos de control de versiones
-├── README.md                    # Documentación, instrucciones y respuestas teóricas
-└── tests/                       # Suite modular de pruebas automatizadas
-    ├── __init__.py
-    ├── conftest.py              # Fixtures compartidos (tienda_con_productos, mocks, etc.)
-    ├── test_producto.py         # Tests unitarios de Producto (básicos y excepciones)
-    ├── test_tienda.py           # Tests de Tienda (CRUD, excepciones, fixtures, carrito)
-    └── test_tienda_doubles.py   # Tests con Dobles de Prueba (Mocks, Stubs, Dummies)
-```
-
----
-
-## 🚀 Instrucciones para Clonar, Configurar y Correr los Tests
+## Instrucciones para Clonar, Configurar y Correr los Tests
 
 ### 1. Clonar el Repositorio
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/SantiagoGirbau/TP1-GirbauSantiago-FloresCesar-LopezGonzalo
 cd TP1
 ```
 
@@ -94,7 +72,7 @@ pytest --cov=producto --cov=tienda --cov=excepciones --cov-report=html
 
 ---
 
-## 📊 Métricas de Cobertura Obtenidas
+## Métricas de Cobertura Obtenidas
 
 Ejecución auditada mediante `pytest-cov`:
 
@@ -114,7 +92,7 @@ TOTAL               64      0     18      0   100%
 
 ---
 
-## 📚 Respuestas a las Preguntas Conceptuales
+##  Respuestas a las Preguntas Conceptuales
 
 ---
 
